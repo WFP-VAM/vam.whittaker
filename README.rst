@@ -1,7 +1,8 @@
 
-### vam.whittaker
+vam.whittaker
+-------------
 
-Whittaker core functionality used in the `modape package <https://github.com/WFP-VAM/modape`_
+Whittaker core functionality used in the `modape package <https://github.com/WFP-VAM/modape>`_
 
 State-of-the art whittaker smoother, implemented as fast C-extension through Cython and including a V-curve optimization of the smoothing parameter.
 
@@ -51,7 +52,7 @@ For examples on the usage of the different functions, check out the `modape jupy
 Bugs, typos & feature requests
 -----
 
-If you find a bug, see a typo, have some kind of troubles running the module or just simply want to have a feature added, please `submit an issue! <https://github.com/WFP-VAM/vam.whittaker/issues/new`_
+If you find a bug, see a typo, have some kind of troubles running the module or just simply want to have a feature added, please `submit an issue <https://github.com/WFP-VAM/vam.whittaker/issues/new>`_!
 
 
 CHANGES
