@@ -39,9 +39,7 @@ setup(
     author='Valentin Pesendorfer',
     author_email='valentin.pesendorfer@wfp.org',
     url='http://github.com/WFP-VAM/vam.whittaker',
-    long_description='''State-of-the art whittaker smoother, implemented as fast C-extension through Cython and including a V-curve optimization of the smoothing parameter.
-
-    For more information, please visit: http://github.com/WFP-VAM/vam.whittaker''',
+    long_description='''State-of-the art whittaker smoother, implemented as fast C-extension through Cython and including a V-curve optimization of the smoothing parameter.\n\nFor more information, please visit: http://github.com/WFP-VAM/vam.whittaker''',
     include_dirs=[numpy.get_include()],
     cmdclass=cmdclass,
     ext_modules=ext_modules,
