@@ -2,6 +2,18 @@
 vam.whittaker
 -------------
 
+|version| |downloads| |license|
+
+.. |version| image:: https://img.shields.io/pypi/v/vam.whittaker.svg
+                  :target: https://pypi.org/project/vam.whittaker/
+
+.. |downloads| image:: https://img.shields.io/pypi/dm/vam.whittaker.svg
+                    :target: https://pypi.org/project/vam.whittaker/
+
+.. |license| image:: https://img.shields.io/github/license/WFP-VAM/vam.whittaker.svg
+                  :target: https://github.com/WFP-VAM/vam.whittaker/blob/master/LICENSE
+|
+
 Whittaker core functionality used in the `modape package <https://github.com/WFP-VAM/modape>`_
 
 State-of-the art whittaker smoother, implemented as fast C-extension through Cython and including a V-curve optimization of the smoothing parameter.
