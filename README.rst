@@ -72,6 +72,9 @@ CHANGES
 
 - v1.0.0:
         - initial release
+- v1.0.1:
+        - minor version issue fix
+
 -----
 
 References:
