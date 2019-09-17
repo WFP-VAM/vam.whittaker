@@ -21,6 +21,7 @@ State-of-the art whittaker smoother, implemented as fast C-extension through Cyt
 Includes the following variations of the whittaker smoother with 2nd order differences:
 
 - **ws2d**: Whittaker with fixed smoothing parameter (``s``)
+- **ws2dp**: Whittaker with fixed smoothing parameter (``s``) and expectile smoothing using asymmetric weights
 - **ws2doptv**: Whittaker with V-curve optimization of the smoothing parameter (``s``)
 - **ws2doptvp**: Whittaker with V-curve optimization of the smoothing parameter (``s``) and expectile smoothing using asymmetric weights
 
@@ -56,7 +57,7 @@ Usage
 
     # or
 
-    from vam.whittaker import * # ws2d, ws2doptv, ws2optvp, lag1corr
+    from vam.whittaker import * # ws2d, ws2dp, ws2doptv, ws2optvp, lag1corr
 
 
 For examples on the usage of the different functions, check out the `modape jupyter notebook <https://github.com/WFP-VAM/modape/blob/master/docs/examples/whittaker_core.ipynb>`_!
@@ -74,6 +75,9 @@ CHANGES
         - initial release
 - v1.0.1:
         - minor version issue fix
+- v2.0.0:
+        - new function `wsdp` & fix for `ws2doptvp`
+
 
 -----
 
