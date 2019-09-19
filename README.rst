@@ -77,6 +77,8 @@ CHANGES
         - minor version issue fix
 - v2.0.0:
         - new function `wsdp` & fix for `ws2doptvp`
+- v2.0.1:
+        - minor bugfix in `wsdp`
 
 
 -----
