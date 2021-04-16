@@ -2,7 +2,7 @@
 vam.whittaker
 -------------
 
-|version| |downloads| |license|
+|CI| |version| |downloads| |license|
 
 .. |version| image:: https://img.shields.io/pypi/v/vam.whittaker.svg
                   :target: https://pypi.org/project/vam.whittaker/
