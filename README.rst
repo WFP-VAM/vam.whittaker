@@ -2,7 +2,10 @@
 vam.whittaker
 -------------
 
-|version| |downloads| |license|
+|CI| |version| |downloads| |license|
+
+.. |CI| image:: https://github.com/WFP-VAM/vam.whittaker/actions/workflows/ci.yml/badge.svg
+             :target: https://github.com/vam.whittaker/modape/actions/
 
 .. |version| image:: https://img.shields.io/pypi/v/vam.whittaker.svg
                   :target: https://pypi.org/project/vam.whittaker/
@@ -79,6 +82,8 @@ CHANGES
         - new function `wsdp` & fix for `ws2doptvp`
 - v2.0.1:
         - minor bugfix in `wsdp`
+- v2.0.2:
+        - distribute built extension on pypi
 
 
 -----

@@ -45,7 +45,6 @@ setup(
     ext_modules=ext_modules,
     classifiers=[
         'Development Status :: 4 - Beta',
-        'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3',
     ],
     setup_requires=['pytest-runner'],
@@ -54,5 +53,5 @@ setup(
         'numpy>=1.15.1',
         'mock;python_version<"3.0"'
     ],
-    python_requires='>=2.7.11, <4',
+    python_requires='>=3, <4',
 )
