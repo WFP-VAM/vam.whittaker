@@ -26,7 +26,7 @@ if USE_CYTHON:
     ext_modules += [
         Extension(
             "vam.whittaker",
-            ["src/_whittaker.pyx"],
+            ["vam/whittaker/_whittaker.pyx"],
             extra_compile_args=["-O3", "-ffast-math"],
         )
     ]
@@ -35,7 +35,7 @@ else:
     ext_modules += [
         Extension(
             "vam.whittaker",
-            ["src/_whittaker.c"],
+            ["vam/whittaker/_whittaker.c"],
             extra_compile_args=["-O3", "-ffast-math"],
         )
     ]
