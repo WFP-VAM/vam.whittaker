@@ -5,7 +5,7 @@ from setuptools import setup, Extension
 
 import numpy
 
-USE_CYTHON = "auto"
+USE_CYTHON = True  # "auto"
 
 if USE_CYTHON:
     try:
@@ -25,7 +25,7 @@ ext_modules = []
 if USE_CYTHON:
     ext_modules += [
         Extension(
-            "vam.whittaker",
+            "vam.whittaker._whit",
             ["vam/whittaker/_whittaker.pyx"],
             extra_compile_args=["-O3", "-ffast-math"],
         )
@@ -34,7 +34,7 @@ if USE_CYTHON:
 else:
     ext_modules += [
         Extension(
-            "vam.whittaker",
+            "vam.whittaker._whit",
             ["vam/whittaker/_whittaker.c"],
             extra_compile_args=["-O3", "-ffast-math"],
         )
