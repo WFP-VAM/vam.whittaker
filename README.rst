@@ -84,7 +84,8 @@ CHANGES
         - minor bugfix in `wsdp`
 - v2.0.2:
         - distribute built extension on pypi
-
+- v2.0.3:
+        - restructure and improve packaging
 
 -----
 
@@ -99,11 +100,3 @@ Core Whittaker function adapted from ``whit2`` function from `R` package `ptw <h
 Bloemberg, T. G. et al. (2010) "Improved Parametric Time Warping for Proteomics", Chemometrics and Intelligent Laboratory Systems, 104 (1), 65-74
 
 Wehrens, R. et al. (2015) "Fast parametric warping of peak lists", Bioinformatics, in press.
-
------
-
-Author & maintainer:
-
-Valentin Pesendorfer
-
-valentin.pesendorfer@wfp.org
