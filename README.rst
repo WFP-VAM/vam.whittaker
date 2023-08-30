@@ -5,7 +5,7 @@ vam.whittaker
 |CI| |version| |downloads| |license|
 
 .. |CI| image:: https://github.com/WFP-VAM/vam.whittaker/actions/workflows/ci.yml/badge.svg
-             :target: https://github.com/vam.whittaker/modape/actions/
+             :target: https://github.com/WFP-VAM/vam.whittaker/actions/workflows/ci.yml
 
 .. |version| image:: https://img.shields.io/pypi/v/vam.whittaker.svg
                   :target: https://pypi.org/project/vam.whittaker/
