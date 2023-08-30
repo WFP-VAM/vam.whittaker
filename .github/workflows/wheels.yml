@@ -13,8 +13,8 @@ jobs:
         os: [ubuntu-22.04, windows-2022]
   
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-python@v2
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v3
 
       - name: Install cibuildwheel
         run: python -m pip install cibuildwheel==1.10.0
@@ -23,8 +23,8 @@ jobs:
         run: python -m cibuildwheel --output-dir wheelhouse
         env:
           CIBW_BEFORE_BUILD: "pip install cython numpy"
-          CIBW_BUILD: "{cp,pp}3*-*"
-          CIBW_SKIP: "cp35-* *-manylinux_i686"
+          CIBW_BUILD: "cp37-* cp38-* cp39-* cp310-* cp311-*"
+          CIBW_SKIP: "pp* *-win32 *-manylinux_i686"
 
       - uses: actions/upload-artifact@v3
         with:
@@ -34,9 +34,9 @@ jobs:
     name: Build source distribution
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
 
-      - uses: actions/setup-python@v2
+      - uses: actions/setup-python@v3
         name: Install Python
         with:
           python-version: '3.8'
@@ -61,9 +61,6 @@ jobs:
           name: artifact
           path: dist
 
-      - uses: pypa/gh-action-pypi-publish@master
+      - uses: pypa/gh-action-pypi-publish@release/v1
         with:
-          password: ${{ secrets.TEST_PYPI_API_TOKEN }}
-          repository-url: https://test.pypi.org/legacy/
-          #user: __token__
-          #password: ${{ secrets.PYPI_API_TOKEN }}
+          password: ${{ secrets.PYPI_API_TOKEN }}
