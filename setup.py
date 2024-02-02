@@ -1,7 +1,7 @@
 # pylint: disable=invalid-name, line-too-long
 """setup.py for VAM whittaker core"""
 
-from setuptools import setup, Extension
+from setuptools import setup, Extension, find_packages
 
 import numpy
 
@@ -43,6 +43,7 @@ else:
 setup(
     include_dirs=[numpy.get_include()],
     cmdclass=cmdclass,
+    packages=find_packages(),
     ext_modules=ext_modules,
     setup_requires=["pytest-runner"],
     tests_require=["pytest"],

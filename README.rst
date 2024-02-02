@@ -88,7 +88,8 @@ CHANGES
         - restructure and improve packaging
 - v2.0.4:
         - fix module import
-
+- v2.0.5:
+        - fix wheel packaging
 
 -----
 
