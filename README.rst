@@ -86,6 +86,9 @@ CHANGES
         - distribute built extension on pypi
 - v2.0.3:
         - restructure and improve packaging
+- v2.0.4:
+        - fix module import
+
 
 -----
 
